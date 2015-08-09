@@ -1,0 +1,5 @@
+app/fonts
+app/favicons
+app/bower
+node_modules
+dist

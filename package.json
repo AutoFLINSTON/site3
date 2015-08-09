@@ -1,0 +1,19 @@
+{
+  "name": "dz1_vadim",
+  "devDependencies": {
+    "browser-sync": "^2.8.0",
+    "gulp": "^3.9.0"
+  },
+  "description": "> Как установить проект",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.8.0",
+    "gulp": "^3.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vadim Klychev",
+  "license": "ISC"
+}

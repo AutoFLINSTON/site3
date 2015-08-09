@@ -1,0 +1,806 @@
+/* fonts */
+@font-face {
+	font-family: 'fira_sansbook';
+	src: url('../fonts/firasans-book-webfont.eot');
+	src: url('../fonts/firasans-book-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/firasans-book-webfont.woff') format('woff'),
+	url('../fonts/firasans-book-webfont.ttf') format('truetype'),
+	url('../fonts/firasans-book-webfont.svg#fira_sansbook') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	font-family: 'fira_sanslight', Arial, sans-serif;
+	background: url(../img/fon.png) repeat;
+	font: 1em 'fira_sanslight';
+}
+
+#pingvin{
+	margin-top: 40px;
+	margin-left: 15em;
+}
+
+.page_wrap {
+	min-height: 100%;
+	margin-bottom: -78px;
+}
+
+.page_wrap:after {
+	content: "";
+	display: block;
+}
+
+.site_footer, .page_wrap:after {
+	height: 78px;
+}
+
+.header {
+	max-width: 100%;
+	height: 82px;
+	background-color: #eff3f7;
+	padding-top: 35px;
+	min-width: 970px;
+}
+
+
+.header_in_wrapper {
+	width: 100%;
+	height: 70px;
+	margin: 0px auto;
+	background-color: #eff3f7;
+	background-repeat: no-repeat;
+	background-position: 0px 3px;
+}
+
+.head_inline{
+	-webkit-filter: grayscale(100%);
+}
+
+
+.head_inline:hover{
+	-webkit-filter: grayscale(0%);
+}
+
+/* .header_in_wrapper img {
+	margin-left: 34px;
+	border: 4px double black;
+} */
+
+
+
+/* ==== SOC ===*/
+.socials{
+	margin: 0;
+	padding: 0;
+	min-width: 260px;
+}
+.socials .socials-item {
+	list-style: none;
+	display: inline-block;
+	height: 48px;
+	width: 48px;
+	margin-left: 19px;
+}
+.socials .socials-item:first-child {
+	margin-left: 0;
+}
+.socials .socials-link {
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-indent: -9999px;
+	background: url(../img/socials.png) no-repeat;
+}
+
+.socials .socials-link.vk {background-position: -2.1px -3.1px; }
+.socials .socials-link.tw {background-position: -71.1px -3.1px; }
+.socials .socials-link.fb {background-position: -140.1px -3.1px; }
+.socials .socials-link.gt {background-position: -209.1px -3.1px; }
+.socials .socials-link:hover {background-position-y: -65px; }
+
+.soc{
+	position: absolute;
+	right: 17%;
+	top: 40px;
+	
+	
+	
+}
+
+/* ===== LOGO ====== */
+.log{
+	position: absolute;
+	top: 20px;
+	left: 10%;
+	
+	
+	
+}
+
+/*=----------------=*/
+/*
+main {
+	padding-top: 2%;
+	width: 75%;
+	margin: 0px auto;
+}
+*/
+
+/*==== MENU ======*/
+
+.menu{
+	width: 25%;
+	float: left;
+}
+
+.link_b{
+	font-family: 'fira_sansbook';
+	display: block;
+	font-size: 20px;
+	text-decoration: none;
+	color: #959aa8;
+}
+
+.link_b:hover{
+	color: #3ba8c0;
+}
+
+#color_hover:hover{
+	color:white;
+	background: #3ba8c0;
+}
+/*
+#color_hover:active{
+	color:white;
+	background: #3ba8c0;
+}
+#color_hover{
+	color:white;
+	background: #3ba8c0;
+}*/
+
+.link_b:active{
+	color: white;
+}
+
+.link_active{
+	color:white;
+}
+
+.menu_up {
+	width: 250px;
+	background: #eff3f7;
+	border-radius: 5px;
+	padding: 0, 0, 5, 0;
+	cursor: pointer;
+}
+
+.menu_up li {
+	list-style-type: none;
+	color: #959aa8;
+	cursor: pointer;
+	padding: 15px 15px 15px 25px;
+	font-family: 'fira_sansbook', Arial, sans-serif;
+	font-size: 21px;
+}
+
+.menu_up li {
+	border-bottom: 2px #3ba8c0 solid;
+}
+
+.menu_up li:last-of-type {
+	border-bottom: none;
+}
+
+.menu_up li.selected:first-of-type {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.menu_up li.selected:last-of-type {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+
+.selected{
+	color:white;
+	background: #3ba8c0;
+}
+
+
+.link_active:hover{
+	color:white;
+}
+
+
+
+
+
+.menu_down {
+	/*float: left;*/
+	width: 250px;
+	background: #3ba8c0;
+	border-radius: 5px 5px 5px 5px;
+	margin-top: 25px;
+	
+}
+
+.mail{
+	background: #41b9d4;
+	text-indent:3em;
+	background-image: url('../img/mail.png');
+	background-repeat: no-repeat;
+	background-position: 20px 10px;
+	
+	
+}
+
+.telephon{
+	background: #48cbe8;
+	text-indent:3em;
+	background-image: url('../img/tel.png');
+	background-repeat: no-repeat;
+	background-position: 20px 10px;
+}
+
+.sk{
+
+	background: #51daf8;
+	text-indent:3em;
+	background-image: url('../img/skype.png');
+	background-repeat: no-repeat;
+	background-position: 20px 10px;
+}
+
+
+
+.menu_down li {
+	list-style-type: none;
+	color: #ffffff;
+	cursor: pointer;
+	padding: 5px 15px 5px 10px;
+	font-family: 'fira_sansbook', Arial, sans-serif;
+	font-size: 18px;
+}
+
+.menu_down li {
+	border-bottom: 2px #3ba8c0 solid;
+	cursor: default;
+}
+
+.link_a{
+	text-decoration: none;
+	color:white;
+}
+
+
+
+/*=====Аватарка======*/
+
+.imgI {
+	width: 150px;
+	height: 150px;
+	box-sizing:border-box;
+	overflow: hidden;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: 5px solid #31a6bd;
+	vertical-align: top;
+	margin-left: 50px;
+	margin-right: 20px;
+	float: left;
+}
+
+.me_foto{
+	max-width: 100%;
+}
+
+.img_box{
+	margin-top: 30px;
+}
+
+
+/*===== Блоки ======*/
+
+.experience{
+	background: #eff3f7;
+	border-radius: 4px;
+	margin-bottom: 26px;
+	margin-left: 285px;
+	max-width: 650px;
+	min-width: 210px;
+	min-height: 263px;
+}
+
+
+
+/* ==== Ярлыки ==== */
+.case {
+	background-image: url('../img/case.png');
+	background-position: 58px 5px;
+	background-repeat: no-repeat;
+}
+
+.hat {
+	background-image: url('../img/hat.png');
+	background-position: 58px 10px;
+	background-repeat: no-repeat;
+}
+
+.course {
+	background-image: url('../img/doc.png');
+	background-position: 66px 10px;
+	background-repeat: no-repeat;
+}
+
+/* === Заголовок к боксам ===*/
+.head_tit{
+	margin: 2%
+}
+
+.head_text {
+	min-width: 210px;
+	max-width: 310px;
+	padding: 10px 20px 10px;
+	border-bottom: 2px #3ba8c0 solid;
+}
+
+.head_text p {
+	color: #3ba8c0;
+	font-family: 'fira_sansbook', Arial, sans-serif;
+	font-size: 27px;
+}
+
+/* === оформление текста === */
+.item {
+	background-repeat: no-repeat;
+	text-indent: 128px;
+}
+
+
+.bold {
+	font-family: 'fira_sansbook';
+	font-size: 16px;
+}
+
+.slow {
+	font-family: 'fira_sanslight';
+	font-size: 15px;
+	line-height: 1;
+	max-width: 218px;
+	position: static;
+	/*margin-left: 60px;*/
+	margin-bottom: 0px;
+	
+}
+
+.lang_it{
+	position: relative;
+	top: -45px;
+	left: 170px;
+	width: 180px;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+
+
+.box_1{
+	margin-left: 42%;
+}
+
+
+.lang{
+	display: block;
+}
+
+.scil {
+	display: inline-block;
+	padding: 0px 14px;
+	margin: 4px 2px;
+	border-radius: 3px;
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 20px;
+	font-family: 'proximanova_condensed', Arial, sans-serif;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3ba8c0+50,2e8ca2+50 */
+	background: #2e8ca2;
+	/* Old browsers */
+	background: -moz-linear-gradient(top, #3ba8c0 50%, #2e8ca2 50%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #3ba8c0), color-stop(50%, #2e8ca2));
+	/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #3ba8c0 50%, #2e8ca2 50%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #3ba8c0 50%, #2e8ca2 50%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #3ba8c0 50%, #2e8ca2 50%);
+	/* IE10+ */
+	background: linear-gradient(to bottom, #3ba8c0 50%, #2e8ca2 50%);
+	/* W3C */
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3ba8c0', endColorstr='#2e8ca2', GradientType=0);
+	/* IE6-9 */
+}
+
+
+
+/* Моя работа */
+.blue_stripe{
+	position: relative;
+	background: #67dffa;
+	width: 100%;
+	height: 20px;
+	z-index: 1;
+	top:-2px;
+}
+
+.img_box_2, .work_dates{
+	margin: 0;
+	padding: 0;
+}
+
+.content_site{
+	height: 100%;
+	width: 100%;
+}
+.content_site div{
+	display: inline-block;
+	text-align: center;
+	vertical-align:top;
+	cursor: pointer;
+}
+.img_new_box{
+	margin-bottom: 70px;
+	margin-top: 0;
+}
+.link_site{
+	text-decoration: none;
+	text-transform: lowercase;
+	font-style: italic;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+
+.text_box p{
+	font-weight: bold;
+	color: #687078;
+	text-align: center;
+}
+
+.text_box{
+	line-height: 1.0;
+	text-align: center;
+}
+.site{
+	height: 100%;
+	width: 180px;
+	margin-left: 20px;
+	margin-bottom: 0;
+	margin-top: 15px;
+	padding: 0;
+}
+.img_box_2{
+    max-width: 180px;
+    max-height: 129px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #3ba8c0;
+    position: relative;
+    /*vertical-align:super;*/
+    margin-bottom: 15px;
+  
+}
+
+.maska{
+    position: absolute;
+    background-color: rgba(1,108,164,.75);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.3s linear;
+    vertical-align:super;
+    
+   
+}
+.maska-tit{
+    display: inline-block;
+    font-family: 'fira_sansbook';
+    font-size: 12px;
+    color: #eff3f7;
+    padding: 0px 4px;
+    border: 2px solid #eff3f7;
+    opacity: 0;
+    border-radius: 6px;
+    transition: opacity 0.3s linear;
+    word-wrap: break-word;
+    max-width: 150px;
+    vertical-align:super;
+    
+    
+}
+.img_box_2:hover .maska-tit{
+    opacity: 1;
+    vertical-align:super;
+    
+   
+    
+   
+}
+.img_box_2:hover .maska{
+    opacity: 1;
+    vertical-align:super;
+    
+    
+}
+.maska:before {
+    display: inline-block;
+    content: '';
+    height: 100%;
+    vertical-align:middle;
+}
+
+.img_site {
+	height: 129px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 2px solid #3ba8c0;
+    background: #fff;
+    position: relative;
+    margin-bottom: 10px;
+}
+.work_h{
+	min-height: 455px;
+	max-height: 100%;
+}
+/* ======= Кнопки ========== */
+
+.button_center{
+	text-align: center;
+	
+}
+
+.btn {
+	border:0px;
+	width: 140px;
+	height: 40px;
+	background-color:#48cbe8;
+	font-family: 'fira_sansbook', sans-serif;
+	font-size:18px;
+	font-weight: bold;
+	text-decoration:none;
+	color:#fff;
+	position:relative;
+	padding:10px 20px;
+	padding-right:50px;
+	background-image: linear-gradient(bottom, rgb(62,51,46) 0%, rgb(101,86,78) 100%);
+	border-radius: 5px;
+	box-shadow: inset 0px 0px 0px #3ba8c0, 0px 5px 0px 0px #3ba8c0;
+	margin-bottom: 15px;
+}
+
+.btn:active {
+	top:3px;
+	background-image: linear-gradient(bottom, rgb(62,51,46) 100%, rgb(101,86,78) 0%);
+	box-shadow: inset 0px 1px 0px #687b8f, 0px 2px 0px 0px #687b8f, 0px 5px 3px #687b8f;
+}
+.btn_res{
+	background-color:#849db5;
+	box-shadow: inset 0px 0px 0px #687b8f, 0px 5px 0px 0px #687b8f;
+	margin-left: 130px;
+}
+
+
+.btn:active::before {
+	top:50%;
+	margin-top:-12px;
+	box-shadow: inset 0px 1px 0px #827066, 0px 3px 0px #19120f, 0px 6px 3px #382e29;
+}
+
+/* ======крнец Кнопки =========== */
+
+/* ===== ДНО ======== */
+footer {
+	width: 100%;
+	background-color: #eff3f7;
+	background-repeat: no-repeat;
+	padding-top: 35px;
+	height: 48px;
+	margin: 0px auto;
+	background-position: 0px 0px;
+	min-width: 970px;
+}
+
+.me_site1{
+	position: absolute;
+	font-family: 'fira_sansbook';
+	font-size: 16px;
+	line-height: 2.2;
+	color:#4a545d;
+	left: 450px;
+	margin: 0px;
+}
+
+.lock{
+	position: absolute;
+	display: block;
+	height: 40px;
+	font-family: 'fira_sansbook';
+	background:url(../img/login.png) no-repeat;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 2.2;
+	color:#4a545d;
+	text-decoration: none;
+	padding-left: 24px;
+	float:left;
+	left: 250px;
+	text-indent: -9999px;
+	cursor: pointer;
+	}
+
+.lock:hover{
+	text-decoration: underline;
+	background:url(../img/login-open.png) no-repeat;
+}
+
+
+.gradient_line {
+	width: 100%;
+	height: 3px;
+	opacity: 0.95;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f6fa+0,1c667a+50,f2f6fa+100 */
+	background: #f2f6fa; /* Old browsers */
+	background: -moz-linear-gradient(left, #f2f6fa 0%, #1c667a 50%, #f2f6fa 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f2f6fa), color-stop(50%,#1c667a), color-stop(100%,#f2f6fa)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, #f2f6fa 0%,#1c667a 50%,#f2f6fa 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #f2f6fa 0%,#1c667a 50%,#f2f6fa 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, #f2f6fa 0%,#1c667a 50%,#f2f6fa 100%); /* IE10+ */
+	background: linear-gradient(to right, #f2f6fa 0%,#1c667a 50%,#f2f6fa 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6fa', endColorstr='#f2f6fa',GradientType=1 ); /* IE6-9 */
+}
+
+/*===== ОБРАТНАЯ CВЯЗЬ ===========*/
+#cont{
+	background: #48cbe8;
+	max-width: 650px;
+}
+
+#cont p{
+	color: white;
+	
+}
+#box-cont{
+	min-width: 650px;
+	max-width: 650px;
+	min-height: 455px;
+	
+	
+}
+/* ---------------------- */
+
+.contact{
+    display: block;
+    font-size: 19px;
+    color: #959aa8;
+    
+}
+.fbform .contact-item{
+    display: inline-block;
+    width: 100%;
+    font-size: 0;
+    margin-bottom: 17px;
+    
+}
+.fbform .contact-item:nth-child(2){
+    margin-left: -5px;
+}
+.fbform .contact-item:first-child{
+    margin-right: 15px;
+}
+
+input{
+    line-height: normal;
+
+}
+input, textarea,.placeholder{
+    font-family: 'fira_sanslight';
+    border: 1px solid #48cbe8;
+    background-color: #fbfcfd;
+    border-radius: 3px;
+    font-size: 13px;
+    color: #48cbe8;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+.fbform .image-code{
+    background-color: #fbfcfd;
+    border: 1px solid #48cbe8;
+    border-radius: 3px;
+    padding: 0;
+    width: 161px;
+    padding: 15px;
+    max-height: 46px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 4%;
+    
+    
+}
+.fbform textarea:-moz-placeholder {
+    color: #48cbe8;
+    font-size: 13px;
+}
+.fbform textarea::-webkit-input-placeholder {
+    color: #48cbe8;
+ }
+input:-moz-placeholder {
+    color: #48cbe8;
+}
+input::-webkit-input-placeholder {
+    color: #48cbe8;
+}
+.fbform .column{
+    width: 190px;
+    height: 40px;
+ }
+
+
+.fbform .contact-item-code{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 18px;
+}
+
+.contact-item-code{
+	width: 190px;
+    
+}
+
+.contact-item{
+	margin-top: 40px;
+	margin-left: 125px;
+	position: relative;
+}
+
+#pssword{
+	width: 430px;
+	height: 160px;
+	
+}
+#login{
+	width: 430px;
+	height: 160px;
+	
+}
+.login_block{
+	position: relative;
+	display: block;
+}
+
+#mesege{
+	width: 400px;
+}
+/* =============== LOGIN ====================*/
+
+#login{
+	display: none;
+}
